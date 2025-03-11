@@ -1,63 +1,20 @@
-# Frontend - Sistema de Monitoramento de Saúde
+### Nome dos Integrantes
 
-Este é o frontend de um sistema de monitoramento de saúde, desenvolvido com HTML, CSS e JavaScript. Ele permite que os usuários visualizem seus indicadores de saúde, como peso, altura, atividade física, horas de sono e consumo de água.
+- **Leonardo dos Santos Lima**
+- **Gustavo José Furlan**
 
-## 🚀 Tecnologias Utilizadas
+# Sistema de Monitoramento de Saúde
+
+Este é o sistema de monitoramento de saúde. Ele permite que os usuários visualizem seus indicadores de saúde, como peso, horas de sono e consumo de água.
+
+## 🚀 Tecnologias Utilizadas (Front-end)
 
 - **HTML** - Estruturação da página web
 - **CSS** - Estilização da página e layout responsivo
 - **JavaScript** - Lógica de interatividade e manipulação de dados
 - **Bootstrap 5** - Framework para estilização e componentes responsivos
 
-## 📂 Estrutura do Projeto
-
-```
-/frontend
-  ├── /assets
-  │   ├── /css
-  │   │   └── styles.css    # Arquivo CSS com as regras de estilo
-  ├── index.html            # Página inicial de cadastro e monitoramento de saúde
-  ├── dashboard.html        # Dashboard que exibe os dados registrados
-  ├── /js
-  │   └── script.js         # Lógica de interação e manipulação de dados com LocalStorage
-```
-
-## 🔧 Configuração e Execução
-
-### 1️⃣ Clonar o Repositório
-
-```sh
-git clone https://github.com/Fwrlann/PTI.git
-cd frontend
-```
-
-### 2️⃣ Abrir o Projeto no Navegador
-
-Abra o arquivo index.html no seu navegador preferido. Não há necessidade de um servidor backend para visualizar o funcionamento do frontend. No entanto, é necessário que a API backend esteja funcionando corretamente para salvar e recuperar os dados de saúde.
-
-## 🧑‍💻 Funcionalidades
-
-- **Cadastro de Dados de Saúde**: O usuário pode registrar indicadores como peso, altura, atividade física, sono e ingestão de água.
-- **Exibição de Dados**: O usuário pode visualizar os dados mais recentes no dashboard e consultar um histórico completo de evolução de sua saúde.
-- **LocalStorage**: Os dados registrados são armazenados no localStorage do navegador, garantindo persistência durante a navegação.
-
-### 📑 Como Funciona
-
-#### 1️⃣ Cadastro de Dados
-
-No arquivo index.html, o usuário pode registrar as informações de saúde. Ao preencher o formulário e clicar em "Cadastrar", os dados são armazenados no localStorage do navegador.
-
-#### 2️⃣ Dashboard de Saúde
-
-No arquivo dashboard.html, os dados mais recentes de saúde são recuperados do localStorage e exibidos em cards e em uma tabela de histórico. Caso o localStorage contenha dados, eles são carregados automaticamente.
-
-# Backend - Sistema de Monitoramento de Saúde
-
-Este é o backend de um sistema de monitoramento de saúde, desenvolvido com **Node.js**, **Express** e **SQLite**. Ele permite que usuários registrem e monitorem indicadores de saúde como peso, horas de sono e consumo de água.
-
----
-
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas (Back-end)
 
 - **Node.js** - Runtime JavaScript
 - **Express.js** - Framework para API REST
@@ -66,13 +23,16 @@ Este é o backend de um sistema de monitoramento de saúde, desenvolvido com **N
 - **Bcrypt.js** - Hash de senhas
 - **Dotenv** - Gerenciamento de variáveis de ambiente
 
----
-
 ## 📂 Estrutura do Projeto
 
 ```
-/app-saude
-  ├── /routes
+  |-- /Frontend
+    ├── /assets
+  │   ├── /css
+  │   │   └── styles.css    # Arquivo CSS com as regras de estilo
+  ├── index.html            # Página inicial de cadastro e monitoramento de saúde
+  ├── dashboard.html        # Dashboard que exibe os dados registrados
+  ├── /Routes
   │   ├── authRoutes.js   # Rotas de autenticação (login e registro)
   │   ├── healthRoutes.js # Rotas para registro e monitoramento de saúde
   ├── .env                # Configurações sensíveis (NÃO SUBIR NO GIT)
@@ -82,15 +42,12 @@ Este é o backend de um sistema de monitoramento de saúde, desenvolvido com **N
   ├── package.json        # Dependências do projeto
 ```
 
----
-
 ## 🔧 Configuração e Execução
 
 ### 1️⃣ **Clonar o Repositório**
 
 ```sh
 git clone https://github.com/Fwrlann/PTI.git
-cd app-saude
 ```
 
 ### 2️⃣ **Instalar Dependências**
