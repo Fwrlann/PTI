@@ -42,7 +42,7 @@ Este é o sistema de monitoramento de saúde. Ele permite que os usuários visua
   ├── package.json        # Dependências do projeto
 ```
 
-## 🔧 Configuração e Execução
+## 🔧 Configuração e Execução (Front-End)
 
 ### 1️⃣ **Clonar o Repositório**
 
@@ -50,13 +50,25 @@ Este é o sistema de monitoramento de saúde. Ele permite que os usuários visua
 git clone https://github.com/Fwrlann/PTI.git
 ```
 
-### 2️⃣ **Instalar Dependências**
+### 2️⃣ **Entrar na pasta Frontend**
+
+```sh
+cd Frontend
+```
+
+### 3️⃣ **Iniciar o Projeto**
+
+```sh
+start index.html
+```
+
+### 4️⃣ **Instalar Dependências**
 
 ```sh
 npm install
 ```
 
-### 3️⃣ **Configurar Variáveis de Ambiente**
+### 5️⃣ **Configurar Variáveis de Ambiente**
 
 Crie um arquivo **.env** na raiz do projeto e adicione:
 
@@ -67,13 +79,13 @@ JWT_SECRET=password
 JWT_EXPIRES_IN=1d
 ```
 
-### 4️⃣ **Criar o Banco de Dados**
+### 6️⃣ **Criar o Banco de Dados**
 
 ```sh
 node createTables.js
 ```
 
-### 5️⃣ **Iniciar o Servidor**
+### 7️⃣ **Iniciar o Servidor**
 
 ```sh
 node server.js
