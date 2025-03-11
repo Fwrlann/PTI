@@ -1,4 +1,4 @@
-### Nome dos Integrantes
+### Nomes dos Integrantes
 
 - **Leonardo dos Santos Lima**
 - **Gustavo José Furlan**
