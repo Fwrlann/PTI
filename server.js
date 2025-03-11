@@ -3,23 +3,21 @@ const express = require("express");
 const cors = require("cors");
 
 const authRoutes = require("./Routes/authRoutes");
-const healthRoutes = require("./Routes/healthRoutes"); // Importe as rotas DEPOIS de criar o app
+const healthRoutes = require("./Routes/healthRoutes");
 
 const app = express();
 
-app.use(express.json()); // Permitir requisições JSON
-app.use(cors()); // Habilitar CORS
+app.use(express.json());
+app.use(cors());
 
-// Rota principal para testar o servidor
 app.get("/", (req, res) => {
-    res.send("API do App Saúde funcionando!");
+  res.send("API do App Saúde funcionando!");
 });
 
-// Definição das rotas
 app.use("/auth", authRoutes);
-app.use("/health-data", healthRoutes); // Agora é seguro chamar aqui
+app.use("/health-data", healthRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
+  console.log(`Servidor rodando na porta ${PORT}`);
 });

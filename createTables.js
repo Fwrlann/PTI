@@ -1,8 +1,7 @@
 const db = require("./database");
 
 db.serialize(() => {
-    // Criar tabela de usuários
-    db.run(`
+  db.run(`
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
@@ -11,8 +10,7 @@ db.serialize(() => {
         )
     `);
 
-    // Criar tabela de registros de saúde
-    db.run(`
+  db.run(`
         CREATE TABLE IF NOT EXISTS health_data (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             user_id INTEGER,
@@ -24,8 +22,7 @@ db.serialize(() => {
         )
     `);
 
-    console.log("Tabelas criadas com sucesso!");
+  console.log("Tabelas criadas com sucesso!");
 });
 
-// Fechar conexão após a criação das tabelas
 db.close();
